@@ -6,3 +6,6 @@ class Post(models.Model):
     body = models.TextField()
     slug = models.SlugField(unique=True)
     date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
