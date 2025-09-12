@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-</head>
-<body>
-    <h1> Home </h1>
-    <p> Check out my <a href="/about">About</a></p>
-</body>
-</html>
+{% extends "layout.html" %}
+{% block title %} 
+    Home Page 
+
+{% endblock %}
+{% block content %}
+    <h1> Welcome to the Home Page! </h1>
+    <p> This is the main landing page of the Django application. </p>
+    <p> Navigate to the <a href="/about/">About page</a> to learn more about us. </p>
+    <p> Check out our <a href="/posts/">Posts</a> for the latest updates. </p>
+{% endblock %}
+
