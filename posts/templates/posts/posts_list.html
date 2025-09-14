@@ -10,7 +10,11 @@
         <h1> Welcome to the Posts page! </h1>
         {% for post in posts %}
             <article class="post">   
-                <h2> {{ post.title }} </h2>
+                <h3> 
+                    <a href="{% url 'posts:post_page' slug=post.slug %}">
+                        {{ post.title }} 
+                    </a>
+                </h3>
                 <p> {{ post.body|linebreaks }} </p>
                 <p> Published on: {{ post.date }} </p>
             </article>
