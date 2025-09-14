@@ -12,3 +12,6 @@ def post_page(request, slug):
     post = Post.objects.get(slug=slug)
     #return HttpResponse(slug)
     return render(request,'posts/post_page.html', {'post': post})
+
+def new_post(request):
+    return render(request,'posts/new_post.html', {})
