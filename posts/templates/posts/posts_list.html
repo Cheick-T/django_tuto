@@ -16,7 +16,7 @@
                     </a>
                 </h3>
                 <p> {{ post.body|linebreaks }} </p>
-                <p> Published on: {{ post.date }} </p>
+                <p> Published on: {{ post.date }} by {{ post.author }} </p>
             </article>
         {% endfor%}
     </section>

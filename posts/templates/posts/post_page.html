@@ -10,7 +10,7 @@
             <article class="post">   
                 <h3>  {{ post.title }} </h3>
                 <p> {{ post.body|linebreaks }} </p>
-                <p> Published on: {{ post.date }} </p>
+                <p> Published on: {{ post.date }} by {{ post.author }}</p>
                 <img  class="post-banner"
                     src="{{ post.banner.url }}" 
                     alt="Banner image for {{ post.title }}"
